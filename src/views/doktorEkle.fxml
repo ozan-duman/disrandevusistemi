@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DoktorEkleController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="419.0" style="-fx-background-color: #17c0eb;">
+         <children>
+            <Label id="lblRandevuE" prefHeight="43.0" prefWidth="130.0" text="Doktor Ekle" textFill="#f5f2f2">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutY="63.0" prefHeight="354.0" prefWidth="419.0">
+         <children>
+            <Label layoutX="35.0" layoutY="54.0" prefHeight="26.0" prefWidth="48.0" text="No">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="210.0" layoutY="55.0" prefHeight="25.0" prefWidth="185.0" />
+            <Label layoutX="35.0" layoutY="87.0" prefHeight="26.0" prefWidth="81.0" text="Ad Soyad">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="130.0" prefHeight="26.0" prefWidth="81.0" text="Telefon No">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="167.0" prefHeight="26.0" prefWidth="60.0" text="Cinsiyet">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnKaydet" layoutX="314.0" layoutY="260.0" mnemonicParsing="false" onAction="#doktorEkle" prefHeight="33.0" prefWidth="81.0" style="-fx-background-color: #17c0eb;" text="Kaydet" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnIptal" layoutX="234.0" layoutY="260.0" mnemonicParsing="false" onAction="#doktorEkleClose" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: red;" text="İptal" textFill="#f2f2f2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtAdSoyad" layoutX="210.0" layoutY="88.0" prefHeight="25.0" prefWidth="185.0" />
+            <TextField fx:id="txtTelefon" layoutX="210.0" layoutY="130.0" prefHeight="25.0" prefWidth="185.0" />
+            <ComboBox fx:id="cmbCinsiyet" layoutX="211.0" layoutY="165.0" prefHeight="25.0" prefWidth="185.0" />
+            <Label layoutX="35.0" layoutY="210.0" prefHeight="26.0" prefWidth="60.0" text="Unvan">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbUnvan" layoutX="211.0" layoutY="211.0" prefHeight="25.0" prefWidth="185.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.HomeController">
+   <left>
+      <VBox prefHeight="750.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="280.0" prefWidth="260.0" style="-fx-background-color: #f1f2f6;">
+               <children>
+                  <ImageView fitHeight="141.0" fitWidth="200.0" layoutX="60.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="62.0">
+                     <image>
+                        <Image url="@../assets/images/tooth.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #17c0eb;">
+               <children>
+                  <VBox layoutY="26.0" prefHeight="500.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="randevuBtn" mnemonicParsing="false" onMouseClicked="#randevu" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #17c0eb;" text="Randevu" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/calendar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="180.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="hastaBtn" mnemonicParsing="false" onMouseClicked="#hasta" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #17c0eb;" text="Hasta" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/patient.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="doktorBtn" mnemonicParsing="false" onMouseClicked="#doktor" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #17c0eb;" text="Doktor" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/doctor.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tedaviBtn" mnemonicParsing="false" onMouseClicked="#tedavi" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #17c0eb;" text="Tedavi" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/heart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="centerAnchorPane" prefHeight="750.0" prefWidth="740.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

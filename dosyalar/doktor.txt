@@ -1,0 +1,4 @@
+1	Tolga Demiralp	345345	Erkek	Ortodonti
+2	Recep	35345	Erkek	Cerrah
+3	Soner Çevik	123123	Erkek	Pedodonti
+4	Feriha Çalışan	234324	Kadın	Endodonti

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="645.0" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LoginController">
+   <children>
+      <BorderPane prefHeight="510.0" prefWidth="645.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="511.0" prefWidth="228.0" styleClass="sagPnael" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane layoutX="14.0" layoutY="45.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/Doktor-logo-A15EF4B958-seeklogo.com_-299x300.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Label alignment="TOP_CENTER" layoutX="25.0" layoutY="208.0" prefHeight="32.0" prefWidth="178.0" text="ÖRNEK DİŞ HASTANESİ" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <StackPane layoutX="14.0" layoutY="338.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/smile%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="511.0" prefWidth="392.0" style="-fx-background-color: #fff;" />
+                  <Pane prefHeight="511.0" prefWidth="391.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <TextField fx:id="txtKullanici" layoutX="100.0" layoutY="145.0" prefHeight="35.0" prefWidth="250.0" promptText="Kullanıcı Adı" />
+                        <PasswordField fx:id="txtSifre" layoutX="100.0" layoutY="238.0" prefHeight="35.0" prefWidth="250.0" promptText="Şifre" />
+                        <Button fx:id="btnGiris" layoutX="230.0" layoutY="314.0" mnemonicParsing="false" onAction="#girisYap" prefHeight="35.0" prefWidth="120.0" styleClass="buton1" text="Giriş Yap" />
+                        <Label layoutX="100.0" layoutY="91.0" prefHeight="30.0" prefWidth="196.0" style="-fx-background-color: #fff;" text="Lütfen giriş yapınız">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="25.0" layoutY="349.0" prefHeight="47.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/tooth%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

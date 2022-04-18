@@ -1,0 +1,13 @@
+/*Login sayfası için yapılan tasarımlar*/
+.sagPnael{
+    -fx-background-color: linear-gradient(to bottom left, #18dcff, #7efff5); 
+}
+.buton1{
+    -fx-background-color: #00d8d6;
+    -fx-text-fill: #ffffff;
+}
+/*Menü sayfası için yapılan tasarımlar*/
+.avatar .decoration{
+    -fx-fill:transparent;
+}
+

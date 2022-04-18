@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="doktorPanel" prefHeight="763.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DoktorController">
+   <children>
+      <HBox layoutX="5.0" layoutY="14.0" prefHeight="67.0" prefWidth="732.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="175.0" text="Doktor Listesi">
+               <HBox.margin>
+                  <Insets left="35.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Label>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#doktorEkleDialog" prefHeight="60.0" prefWidth="142.0" style="-fx-background-color: #f1f2f6;" text="Doktor Ekle">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="272.0" />
+               </HBox.margin>
+            </StackPane>
+         </children>
+      </HBox>
+      <TableView fx:id="doktorListele" layoutX="21.0" layoutY="108.0" prefHeight="578.0" prefWidth="705.0">
+         <columns>
+            <TableColumn fx:id="tID" prefWidth="97.0" text="ID" />
+            <TableColumn fx:id="tAdSoyad" prefWidth="171.0" text="Adı Soyadı" />
+            <TableColumn fx:id="tPhone" minWidth="0.0" prefWidth="156.0" text="Telefon" />
+            <TableColumn fx:id="tCinsiyet" prefWidth="131.0" text="Cinsiyet" />
+            <TableColumn fx:id="tUnvan" prefWidth="159.0" text="Unvan" />
+         </columns>
+      </TableView>
+      <HBox alignment="BASELINE_RIGHT" layoutX="54.0" layoutY="695.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="662.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#doktorDuzenleDialog" prefHeight="60.0" prefWidth="142.0" style="-fx-background-color: #f1f2f6;" text="Düzenle">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/file.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="doktorSil" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="142.0" style="-fx-background-color: #f1f2f6;" text="Sil">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
